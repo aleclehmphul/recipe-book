@@ -1,2 +1,2 @@
 # recipe-book
-Java Spring RESTful API for a Recipe Book application.
+RESTful API for a Recipe Book application implemented with Java Spring Boot and PostgreSQL.
