@@ -22,7 +22,7 @@ Follow these steps to get your development environment running:
    ```
 2. **Configure PostgreSQL database and Flyway database migration credentials**
 
-Update `src/main/resources/application.yml` with your database credentials and URL.
+Please make sure to create a PostgreSQL database called ```recipebook``` and update `src/main/resources/application.yml` with your database credentials and URL.
 
    ```bash
    app:
@@ -233,6 +233,16 @@ DELETE /api/v1/recipes/{id}
 {id} corresponds to the recipe id (from the recipe table) stored in the database.
 
 ---
+
+## Database and ERD
+
+The database initialization code can be found inside ```src/main/resources/db/migration/V1__InitTables.sql``` file. This SQL file is automatically executed when the application is started.
+
+Below is the Entity Relationship Diagram for this application.
+
+![Recipe_ER_Diagram](https://github.com/aleclehmphul/recipe-book/assets/61329825/257d7708-5898-4b44-9aaf-9c3d72cbfead)
+
+
 
 ## License
 This project is licensed under the MIT License.
